@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jhon</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">CERTIFICADOS</a></li>
+                    <li><a href="#GALLERY" onclick="seleccionar()">GALERIA</a></li>
+                    <li><a href="#contact" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+        <!-- Custom Whatsapp -->
+        <div class="wh-api">
+            <div class="wh-fixed">
+              <a
+                class="walink"
+                target="_blank"
+                href="https://wa.me/+573118685918">
+                <button class="wh-ap-btn"></button>
+              </a>
+            </div>
+          </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-imagenes">
+                <img src="imagenes/Foto_Jhon.jpg" alt="">
+            </div>
+            <h1>Jhon Henry Rios Ramirez</h1>
+            <h2>Ingenieria electrónica</h2>
+            <h2>Análisis y ciencia de datos</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+        <!-- SECCION SOBRE MI -->
+        <section id="sobremi" class="sobremi">
+            <div class="contenido-seccion">
+                <h2>Sobre Mí</h2>
+                <p><span>Hola, soy Jhon Henry Rios.</span> Estudiante de Ingeniería Electrónica y Análisis y Ciencia de Datos. Me apasiona combinar mis conocimientos en ingeniería con la ciencia de datos para encontrar soluciones innovadoras a problemas complejos. Valoro el trabajo en equipo y siempre busco soluciones óptimas a los problemas. Me esfuerzo constantemente por aprender y crecer tanto personal como profesionalmente.</p>
+                <div class="fila">
+                    <!-- datos personales -->
+                    <div class="col">
+                        <h3>Datos Personales</h3>
+                        <ul>
+                            <li>
+                                <strong>Cumpleaños</strong>
+                                04-03-1998
+                            </li>
+                            <li>
+                                <strong>Teléfono</strong>
+                                3118685918
+                            </li>
+                            <li>
+                                <strong>Email</strong>
+                                riosjhonhenry@gmail.com
+                            </li>
+                            <li>
+                                <strong>Dirección</strong>
+                                Manizales, Colombia
+                            </li>
+                        </ul>
+                    </div> 
+                    <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-vial"></i>
+                            <span>CIENCIA</span>
+                        </div>                        
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-microchip"></i>
+                            <span>TECNOLOGIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-bicycle"></i>
+                            <span>BICICLETA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-horse"></i>
+                            <span>CABALLOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-futbol"></i>
+                            <span>futbol</span>
+                        </div> 
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="assets/Hoja_de_Vida_JhonhRr.pdf" download="Hoja_de_Vida_JhonhRr.pdf" style="text-decoration: none; color: inherit;">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </a>
+            </button>
+            
+        </div>
+    </section>  
+        <!-- SECCION SKILLS -->
+<section class="skills" id="skills">
+    <div class="contenido-seccion">
+        <h2>Skills</h2>
+        <div class="fila">
+            <!-- Technical Skill -->
+            <div class="col">
+                <h3>Technical Skills</h3>
+                <div class="skill" data-skill="Python">
+                    <span>Python</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+                <div class="skill" data-skill="PowerBI">
+                    <span>PowerBI</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+                <div class="skill" data-skill="SPSS Software |IBM">
+                    <span>SPSS Software |IBM</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+                <div class="skill" data-skill="MySQL">
+                    <span>SQL</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+                <div class="skill" data-skill="Docker">
+                    <span>Docker</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+                <div class="skill" data-skill="HTMLCSS">
+                    <span>HTML & CSS</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+                <div class="skill" data-skill="WebScraping">
+                    <span>WebScraping</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Professional Skills -->
+            <div class="col">
+                <h3>Professional Skills</h3>
+                <div class="skill" data-skill="Comunicacion">
+                    <span>Comunicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+                <div class="skill" data-skill="TrabajoEquipo">
+                    <span>Trabajo en Equipo</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+                <div class="skill" data-skill="Creatividad">
+                    <span>Creatividad</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+                <div class="skill" data-skill="Dedicacion">
+                    <span>Dedicación</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+                <div class="skill" data-skill="ProyectManagement">
+                    <span>Proyect Management</span>
+                    <div class="barra-skill">
+                        <div class="progreso"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria Electrónica</h4>
+                        <span class="casa">Universidad Autónoma de Manizales</span>
+                        <p>Utilización de propiedades eléctricas y magnéticas para resolver problemas en diversos campos, desde las comunicaciones hasta la inteligencia artificial. Se lideran proyectos de vanguardia en robótica, automatización industrial, IA y telecomunicaciones.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Fundamentos de Python</h4>
+                        <span class="casa">Platzi</span>
+                        <span class="fecha">2023</span>
+                        <p>Aprender a programar en Python desde cero. Potenciar el futuro con el lenguaje en auge en data science, desarrollo backend, Machine Learning, IoT y más.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Data Analytics I </h4>
+                        <span class="casa">Universidad Autónoma de Manizales</span>
+                        <span class="fecha">2023</span>
+                        <p> Equipar con las habilidades necesarias para trabajar con datos utilizando Python, desde la manipulación hasta el análisis y la visualización, preparándolos para roles en campos como análisis de datos, ciencia de datos, y toma de decisiones basada en datos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Intensivo PowerBI</h4>
+                        <span class="casa">4GOAcademy</span>
+                        <span class="fecha">2024</span>
+                        <p> uso eficaz de la herramienta de Business Intelligence (BI) de Microsoft, PowerBI. habilidades necesarias para crear, analizar y compartir informes y paneles.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4> Ciencia de Datos</h4>
+                        <span class="casa"> Universidad Autónoma de  Manizales / Autoaprendizaje</span>
+                        <p>Análitica predictiva y prescriptiva. Proyectos de Machine Learning que se enfocan en utilizar algoritmos y técnicas para análizar conjuntos de datos y generar modelos predictivos o clasificatorios. Estos proyectos implican la recopilación y limpieza de datos, la selección de algoritmos apropiados según el tipo de problema (predicción, clasificación, etc.), el entrenamiento de modelos tales como árboles de decisión, Naive Bayes, Redes Neuronales determinando la evaluación de la precisión y rendimiento de los modelos generados.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4> Análisis de Datos</h4>
+                        <span class="casa"> Universidad Autónoma de Manizales / Autoaprendizaje</span>
+                        <p>Metodología CRISP-DM: Comprensión tema del negocio, comprensión de datos, preparación de datos, exploración, validación, visualización.Análitica descriptiva y diagnostica de datos para sacar información valiosa, sugerir conclusiones y apoyar toma de desiciones. Creacion de dashboards en Python y PowerBI</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia en proyectos</h3>
+                    <div class="item der">
+                        <h4>Modelos de Machine Learning para predicción de Resultados en la Premier League</h4>
+                        <p>Desarrollo de modelos de machine learning (Random Foresy y Redes neuronales) capaces de predecir con precisión los resultados de los partidos en la Premier League. Estos modelos tienen como finalidad proporcionar información valiosa para tomar decisiones estratégicas e informadas.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Modelo de Redes Neuronales Convolucionales para predicción de vocales</h4>
+                        <p>Creación de modelo capas de predecir con buena precisión la vocal que esta en una imagen. </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Dashboards PowerBI | Python, gráficas SPSS</h4>
+                        <p>Análitica descriptiva y diagnostica de datos para sacar información valiosa, sugerir conclusiones y apoyar toma de desiciones.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Landing Page</h4>
+                        <p>Creación de landing page para empresa de Subestaciones y montajes eléctricos con HTML, CSS y JS.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Portafolio Web</h4>
+                        <p>Creación portafolio web con HTML, CSS y JS.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                
+     <!-- SECCION CERTIFICADOS -->
+     <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>CERTIFICADOS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="imagenes/Cert_python.png" alt="">
+                    <div class="overlay">
+                        <h3>Python</h3>
+                        <p>Fundamentos de python</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/Cert_análisis.png" alt="">
+                    <div class="overlay">
+                        <h3>Data analytics</h3>
+                        <p>Análisis de datos con python</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/Cert_PBI.png" alt="">
+                    <div class="overlay">
+                        <h3>PowerBI</h3>
+                        <p>Creación de dashboards interactivos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/Cert_Excel.png" alt="">
+                    <div class="overlay">
+                        <h3>Excel Básico</h3>
+                        <p>Intensivo practica de excel.</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imagenes/Cert_ER.png" alt="">
+                    <div class="overlay">
+                        <h3>Energias renovables</h3>
+                        <p>introduccion a las ER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section id="GALLERY"class="gallery container">
+        <h2 class="container__title">Galería de Proyectos</h2>
+        <div class="carousel" id="gallery">
+          <!-- Radio buttons for slides -->
+          <input type="radio" name="slides" checked="checked" id="slide-1" />
+          <input type="radio" name="slides" id="slide-2" />
+          <input type="radio" name="slides" id="slide-3" />
+          <input type="radio" name="slides" id="slide-4" />
+          <input type="radio" name="slides" id="slide-5" />
+          <input type="radio" name="slides" id="slide-6" />
+  
+          <!-- Slides -->
+          <div class="carousel__slides">
+            <div class="carousel__slide">
+              <figure>
+                <img src="./imagenes/Dash1.PNG" alt="Imagen de la empresa" />
+              </figure>
+            </div>
+            <div class="carousel__slide">
+              <figure>
+                <img src="./imagenes/dashRH.PNG" alt="Imagen de la empresa" />
+              </figure>
+            </div>
+            <div class="carousel__slide">
+              <figure>
+                <img src="./imagenes/Dash3INST.PNG" alt="Imagen de la empresa" />
+              </figure>
+            </div>
+            <div class="carousel__slide">
+              <figure>
+                <img src="./imagenes/hist1.png" alt="Imagen de la empresa" />
+              </figure>
+            </div>
+            <div class="carousel__slide">
+              <figure>
+                <img src="./imagenes/hist2.png" alt="Imagen de la empresa" />
+              </figure>
+            </div>
+            <div class="carousel__slide">
+              <figure>
+                <img src="./imagenes/DASH4.PNG" alt="Imagen de la empresa" />
+              </figure>
+            </div>
+          </div>
+  
+          <!-- Thumbnails -->
+          <div class="carousel__thumbnails">
+            <label for="slide-1">
+              <img src="./imagenes/Dash1.PNG" alt="Imagen de la empresa" />
+            </label>
+            <label for="slide-2">
+              <img src="./imagenes/dashRH.PNG" alt="Imagen de la empresa" />
+            </label>
+            <label for="slide-3">
+              <img src="./imagenes/Dash3INST.PNG" alt="Imagen de la empresa" />
+            </label>
+            <label for="slide-4">
+              <img src="./imagenes/hist1.png" alt="Imagen de la empresa" />
+            </label>
+            <label for="slide-5">
+              <img src="./imagenes/hist2.png" alt="Imagen de la empresa" />
+            </label>
+            <label for="slide-6">
+              <img src="./imagenes/DASH4.PNG" alt="Imagen de la empresa" />
+            </label>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Contacto -->
+      <section id="contact" class="contact container">
+        <h2 class="container__title">Contácto</h2>
+  
+        <div class="contact__content">
+          <!-- Formulario de Contacto -->
+          <form class="contact__form" id="contactForm">
+            <div class="form__group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form__group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+          </form>
+  
+          <!-- Información de Contacto -->
+          <div class="contact__info">
+            <h3>Información de Contacto</h3>
+            <p><strong>Teléfono:</strong> +57-311-8685918</p>
+            <p><strong>Email:</strong> riosjhonhenry@gmail.com</p>
+          </div>
+        </div>
+<script src="intera.js"></script>
+</body> 
+</html>
