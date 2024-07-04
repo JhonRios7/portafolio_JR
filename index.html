@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portafolio</title>
     <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('rT99C_VVaJQI4966A')
+    </script>
 </head>
 <body>
     <!-- MENU ENCABEZADO -->
@@ -47,22 +53,26 @@
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-imagenes">
-                <img src="imagenes/Foto_Jhon.jpg" alt="">
+                <img src="imagenes/perfil.jpg" alt="">
             </div>
             <h1>Jhon Henry Rios Ramirez</h1>
             <h2>Ingenieria electrónica</h2>
             <h2>Análisis y ciencia de datos</h2>
             <div class="redes">
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
+                <a href="https://github.com/JhonRios7" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/jhon-henry-rios-ds" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+            </div>            
         </div>
     </section>
         <!-- SECCION SOBRE MI -->
         <section id="sobremi" class="sobremi">
             <div class="contenido-seccion">
                 <h2>Sobre Mí</h2>
-                <p><span>Hola, soy Jhon Henry Rios.</span> Estudiante de Ingeniería Electrónica y Análisis y Ciencia de Datos. Me apasiona combinar mis conocimientos en ingeniería con la ciencia de datos para encontrar soluciones innovadoras a problemas complejos. Valoro el trabajo en equipo y siempre busco soluciones óptimas a los problemas. Me esfuerzo constantemente por aprender y crecer tanto personal como profesionalmente.</p>
+                <p><span>Hola, soy Jhon Henry Rios.</span> Estudiante de décimo semestre de Ingeniería Electrónica, apasionado por el Análisis y Ciencia de Datos. Me aficiona combinar mis conocimientos en ingeniería con la ciencia de datos para encontrar soluciones innovadoras a problemas complejos. Valoro el trabajo en equipo y siempre busco soluciones óptimas a los problemas. Me esfuerzo constantemente por aprender y crecer tanto personal como profesionalmente.</p>
                 <div class="fila">
                     <!-- datos personales -->
                     <div class="col">
@@ -88,7 +98,7 @@
                     </div> 
                     <!-- intereses -->
                 <div class="col">
-                    <h3>Intereses</h3>
+                    <h3>Hobbies</h3>
                     <div class="contenedor-intereses">
                         <div class="interes">
                             <i class="fa-solid fa-person-hiking"></i>
@@ -445,19 +455,19 @@
           <!-- Formulario de Contacto -->
           <form class="contact__form" id="contactForm">
             <div class="form__group">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="name" required />
+                <label for="name">Nombre</label>
+                <input type="text" id="from_name" name="from_name" required />
             </div>
             <div class="form__group">
-              <label for="email">Correo Electrónico</label>
-              <input type="email" id="email" name="email" required />
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email_id" name="email_id" required />
             </div>
             <div class="form__group">
-              <label for="message">Mensaje</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn">Enviar Mensaje</button>
-          </form>
+            <button type="submit" class="btn" id="button">Enviar Mensaje</button>
+        </form>
   
           <!-- Información de Contacto -->
           <div class="contact__info">

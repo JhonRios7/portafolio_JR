@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     percentage = 75;
                     break;
                 case 'WebScraping':
-                    percentage = 45;
+                    percentage = 65;
                     break;
                 case 'Comunicacion':
                     percentage = 90;
@@ -54,4 +54,24 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     animateSkills();
+});
+
+const btn = document.getElementById('button');
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    btn.textContent = 'Sending...';
+
+    const serviceID = 'default_service';
+    const templateID = 'template_7cwu7wm';
+
+    emailjs.sendForm(serviceID, templateID, this)
+        .then(() => {
+            btn.textContent = 'Enviar Mensaje';
+            alert('¡Mensaje enviado!');
+        }, (err) => {
+            btn.textContent = 'Enviar Mensaje';
+            alert(JSON.stringify(err));
+        });
 });
