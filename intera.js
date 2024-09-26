@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Animación de las barras de habilidades
     function animateSkills() {
         const skills = document.querySelectorAll('.skill');
 
@@ -54,24 +55,35 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     animateSkills();
-});
 
-const btn = document.getElementById('button');
+    // Control del menú responsive
+    const nav = document.getElementById('nav');
+    const navResponsive = document.querySelector('.nav-responsive');
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+    function toggleMenu() {
+        nav.classList.toggle('open');
+    }
 
-    btn.textContent = 'Sending...';
+    navResponsive.addEventListener('click', toggleMenu);
 
-    const serviceID = 'default_service';
-    const templateID = 'template_7cwu7wm';
+    // Enviar formulario
+    const btn = document.getElementById('button');
 
-    emailjs.sendForm(serviceID, templateID, this)
-        .then(() => {
-            btn.textContent = 'Enviar Mensaje';
-            alert('¡Mensaje enviado!');
-        }, (err) => {
-            btn.textContent = 'Enviar Mensaje';
-            alert(JSON.stringify(err));
-        });
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.textContent = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_7cwu7wm';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.textContent = 'Enviar Mensaje';
+                alert('¡Mensaje enviado!');
+            }, (err) => {
+                btn.textContent = 'Enviar Mensaje';
+                alert(JSON.stringify(err));
+            });
+    });
 });
