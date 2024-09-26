@@ -9,9 +9,8 @@
     <link rel="stylesheet" href="estilo.css">
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
     <script type="text/javascript">
-        emailjs.init('rT99C_VVaJQI4966A')
+        emailjs.init('rT99C_VVaJQI4966A');
     </script>
 </head>
 <body>
@@ -23,13 +22,13 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portafolio" onclick="seleccionar()">CERTIFICADOS</a></li>
-                    <li><a href="#GALLERY" onclick="seleccionar()">GALERIA</a></li>
-                    <li><a href="#contact" onclick="seleccionar()">CONTACTO</a></li>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#sobremi">SOBRE MI</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#curriculum">CURRICULUM</a></li>
+                    <li><a href="#portafolio">CERTIFICADOS</a></li>
+                    <li><a href="#GALLERY">GALERIA</a></li>
+                    <li><a href="#contact">CONTACTO</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -49,14 +48,16 @@
 
     <script>
         // Mostrar/ocultar menú en dispositivos móviles
-        function mostrarOcultarMenu() {
+        document.addEventListener('DOMContentLoaded', function() {
             const nav = document.getElementById('nav');
-            if (nav.style.display === 'flex') {
-                nav.style.display = 'none';
-            } else {
-                nav.style.display = 'flex';
+            const navResponsive = document.querySelector('.nav-responsive');
+
+            function mostrarOcultarMenu() {
+                nav.classList.toggle('open'); // Añade/Elimina la clase 'open'
             }
-        }
+
+            navResponsive.addEventListener('click', mostrarOcultarMenu);
+        });
     </script>
 
     <!-- SECCION INICIO -->

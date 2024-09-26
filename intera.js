@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-// Función para mostrar u ocultar el menú en dispositivos móviles
-function mostrarOcultarMenu() {
+    // Control del menú responsive
     const nav = document.getElementById('nav');
-    nav.classList.toggle('active');
-  }  
+    const navResponsive = document.querySelector('.nav-responsive');
+
+    function toggleMenu() {
+        nav.classList.toggle('open');  // Asegúrate de que esta clase exista en tu CSS
+    }
+
+    navResponsive.addEventListener('click', toggleMenu);
 
     // Animación de las barras de habilidades
     function animateSkills() {
@@ -62,16 +66,6 @@ function mostrarOcultarMenu() {
     }
 
     animateSkills();
-
-    // Control del menú responsive
-    const nav = document.getElementById('nav');
-    const navResponsive = document.querySelector('.nav-responsive');
-
-    function toggleMenu() {
-        nav.classList.toggle('open');
-    }
-
-    navResponsive.addEventListener('click', toggleMenu);
 
     // Enviar formulario
     const btn = document.getElementById('button');
