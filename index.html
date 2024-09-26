@@ -37,15 +37,27 @@
             </div>
         </header>
     </div>
-        <!-- Custom Whatsapp -->
-        <div class="wh-api">
-            <div class="wh-fixed">
-              <a
-                class="walink" target="_blank" href="https://wa.me/+573118685918">
+
+    <!-- Custom Whatsapp -->
+    <div class="wh-api">
+        <div class="wh-fixed">
+            <a class="walink" target="_blank" href="https://wa.me/+573118685918">
                 <button class="wh-ap-btn"></button>
-              </a>
-            </div>
-          </div>
+            </a>
+        </div>
+    </div>
+
+    <script>
+        // Mostrar/ocultar menú en dispositivos móviles
+        function mostrarOcultarMenu() {
+            const nav = document.getElementById('nav');
+            if (nav.style.display === 'flex') {
+                nav.style.display = 'none';
+            } else {
+                nav.style.display = 'flex';
+            }
+        }
+    </script>
 
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">

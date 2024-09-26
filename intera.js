@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+// Función para mostrar u ocultar el menú en dispositivos móviles
+function mostrarOcultarMenu() {
+    const nav = document.getElementById('nav');
+    nav.classList.toggle('active');
+  }  
+
     // Animación de las barras de habilidades
     function animateSkills() {
         const skills = document.querySelectorAll('.skill');

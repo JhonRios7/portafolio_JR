@@ -1,14 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap");
+
 * {
   box-sizing: border-box;
   font-family: "Work Sans";
   margin: 0;
   padding: 0;
 }
-html {
-  /* me permite deslizar cuando hago clic en los links del menu */
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* Para asegurarnos de que no haya desbordamiento horizontal */
   scroll-behavior: smooth;
 }
+
 /* MENU */
 .contenedor-header {
   background: #1e2326;
@@ -18,6 +23,7 @@ html {
   left: 0;
   z-index: 99;
 }
+
 .contenedor-header header {
   max-width: 1100px;
   margin: auto;
@@ -25,28 +31,34 @@ html {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
+  position: relative;
 }
+
 .contenedor-header header .logo a {
   font-family: "Righteous";
   font-size: 36px;
   color: #627aa4;
   text-decoration: none;
 }
-.contenedor-header header ul {
+
+.contenedor-header header nav ul {
   display: flex;
   list-style: none;
 }
+
 .contenedor-header header nav ul li a {
-  text-align: none;
   color: #fff;
   margin: 0 15px;
   padding: 3px;
   transition: 0.5s;
   text-decoration: none;
 }
+
 .contenedor-header header nav ul li a:hover {
   color: #627aa4;
 }
+
+/* Botón de menú para móviles */
 .nav-responsive {
   background-color: #627aa4;
   color: #fff;
@@ -54,9 +66,12 @@ html {
   border-radius: 5px;
   cursor: pointer;
   display: none;
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }
 
-/* Custom Whatsapp  */
+/* Custom Whatsapp */
 button.wh-ap-btn {
   outline: none;
   width: 60px;
@@ -100,14 +115,7 @@ button.wh-ap-btn:hover {
   text-decoration: none;
 }
 
-#site-scroll {
-  bottom: 100px;
-  background-color: #ffffff80;
-  color: #000;
-  border: 1px solid #000;
-}
-
-/* SECCION I N I C I O */
+/* SECCION INICIO */
 .inicio {
   background: linear-gradient(
       to top,
@@ -116,11 +124,13 @@ button.wh-ap-btn:hover {
     ),
     url(imagenes/fondo4.png);
   background-size: cover;
-  height: 130vh;
+  height: 100vh;
   color: #fff;
   display: flex;
   align-items: center;
+  justify-content: center; /* Para centrar el contenido */
 }
+
 .inicio .contenido-banner {
   padding: 20px;
   background-color: #1e2326;
@@ -129,6 +139,7 @@ button.wh-ap-btn:hover {
   text-align: center;
   border-radius: 40px;
 }
+
 .inicio .contenido-banner img {
   margin-top: 10px;
   border: 10px solid #627aa4;
@@ -137,15 +148,18 @@ button.wh-ap-btn:hover {
   margin: auto;
   border-radius: 100%;
 }
+
 .inicio .contenido-banner h1 {
   margin-top: 40px;
-  font-size: 42px;
+  font-size: 36px;
   font-family: "Righteous";
 }
+
 .inicio .contenido-banner h2 {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: normal;
 }
+
 .inicio .contenido-banner .redes a {
   color: #fff;
   display: inline-block;
@@ -159,65 +173,86 @@ button.wh-ap-btn:hover {
   font-size: 20px;
   transition: 0.3s;
 }
+
 .inicio .contenido-banner .redes a:hover {
   background-color: #627aa4;
 }
+
+/* SECCION SOBRE MI */
 .sobremi {
   background-color: #1e2326;
   color: #fff;
   padding: 50px 20px;
 }
+
 .sobremi .contenido-seccion {
   max-width: 1100px;
   margin: auto;
+  width: 100%; /* Asegúrate que ocupe el 100% del contenedor */
 }
+
 .sobremi h2 {
-  font-size: 48px;
+  font-size: 36px;
   font-family: "Righteous";
   text-align: center;
   padding: 20px 0;
 }
+
 .sobremi .contenido-seccion p {
-  font: 18px;
+  font-size: 18px;
   line-height: 22px;
   margin-bottom: 20px;
 }
+
 .sobremi .contenido-seccion p span {
   color: #627aa4;
   font-weight: bold;
 }
+
+/* Layout para fila en sobremi */
 .sobremi .fila {
   display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre las columnas */
+  width: 100%; /* Ocupa todo el ancho */
 }
+
 .sobremi .fila .col {
-  width: 50%;
+  width: 48%; /* Ancho ajustado para evitar que colapsen en móviles */
 }
+
 .sobremi .fila .col h3 {
   font-size: 28px;
   font-family: "Righteous";
   margin-bottom: 25px;
 }
+
 .sobremi .fila .col ul {
   list-style: none;
 }
+
 .sobremi .fila .col ul li {
   margin: 12px 0;
 }
+
 .sobremi .fila .col ul li strong {
   display: inline-block;
   color: #627aa4;
   width: 130px;
 }
+
 .sobremi .fila .col ul li span {
   background-color: #627aa4;
   padding: 3px;
   font-weight: bold;
   border-radius: 5px;
 }
+
 .sobremi .fila .col .contenedor-intereses {
   display: flex;
   flex-wrap: wrap;
 }
+
 .sobremi .fila .col .contenedor-intereses .interes {
   width: 105px;
   height: 105px;
@@ -230,13 +265,16 @@ button.wh-ap-btn:hover {
   justify-content: center;
   transition: 0.3s;
 }
+
 .sobremi .fila .col .contenedor-intereses .interes:hover {
   background-color: #627aa4;
 }
+
 .sobremi .fila .col .contenedor-intereses .interes i {
   font-size: 30px;
   margin-bottom: 10px;
 }
+
 .sobremi button {
   cursor: pointer;
   background-color: transparent;
@@ -250,6 +288,7 @@ button.wh-ap-btn:hover {
   position: relative;
   z-index: 10;
 }
+
 .sobremi button .overlay {
   position: absolute;
   top: 0;
@@ -260,9 +299,86 @@ button.wh-ap-btn:hover {
   z-index: -1;
   transition: 1s;
 }
+
 .sobremi button:hover .overlay {
   width: 100%;
 }
+
+/* MEDIA QUERIES PARA RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .contenedor-header header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contenedor-header header nav ul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    display: none;
+  }
+
+  .contenedor-header header nav ul li {
+    margin: 10px 0;
+  }
+
+  .contenedor-header header nav ul li a {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .nav-responsive {
+    display: block;
+  }
+
+  .contenedor-header header nav ul.active {
+    display: flex;
+  }
+
+  .inicio {
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  .inicio .contenido-banner {
+    max-width: 100%;
+  }
+
+  .inicio .contenido-banner img {
+    width: 50%;
+  }
+
+  .inicio .contenido-banner h1 {
+    font-size: 28px;
+  }
+
+  .inicio .contenido-banner h2 {
+    font-size: 14px;
+  }
+
+  .sobremi .fila {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .sobremi .fila .col {
+    width: 100%;
+  }
+
+  .sobremi h2 {
+    font-size: 32px;
+  }
+
+  .sobremi .contenido-seccion p {
+    font-size: 16px;
+  }
+
+  .sobremi .fila .col h3 {
+    font-size: 24px;
+  }
+}
+
 /* SECCION S K I L L S */
 .skills {
   background-color: #252a2e;
