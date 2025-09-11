@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const navResponsive = document.querySelector('.nav-responsive');
 
     function toggleMenu() {
-        nav.classList.toggle('open');  // Asegúrate de que esta clase exista en tu CSS
+        nav.classList.toggle('open');  
     }
 
     navResponsive.addEventListener('click', toggleMenu);
@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', function() {
                     percentage = 81;
                     break;
                 case 'Docker':
-                    percentage = 55;
+                    percentage = 85;
                     break;
                 case 'HTMLCSS':
                     percentage = 75;
                     break;
                 case 'WebScraping':
-                    percentage = 65;
+                    percentage = 80;
                     break;
                 case 'Comunicacion':
                     percentage = 90;
